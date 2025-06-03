@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Ticket</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-header">
+        <img src="./assets/images/logo.svg" alt="" />
+        <h2>Coding Conf</h2>
+      </div>
+      <h1 class="main-title">
+        Your Journey to Coding Conf <br />
+        2025 Starts Here!
+      </h1>
+      <p class="main-description">
+        Secure your spot at next year’s biggest coding conference.
+      </p>
+      <form>
+        <div class="input-wrapper">
+          <label for="avatar">Upload Avatar</label>
+          <input
+            type="file"
+            name="avatar"
+            id="avatar"
+            accept="image/jpg, image/png"
+          />
+          <span class="file-description"
+            >Upload your photo (JPG or PNG, max size: 500KB).</span
+          >
+        </div>
+        <div class="input-wrapper">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            class="full-name"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email"
+            class="email-address"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="github-username">GitHub Username</label>
+          <input
+            type="text"
+            name="github-username"
+            id="github-username"
+            class="github-username"
+          />
+        </div>
+        <button type="submit">Generate My Ticket</button>
+      </form>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

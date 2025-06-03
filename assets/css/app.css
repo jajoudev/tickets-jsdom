@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+:root {
+  --neutral-300: #d1d0d5;
+  --neutral-500: #8784a5;
+  --neutral-900: #0d082d;
+  --orange: #f57463;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  color: white;
+}
+
+html, body {
+    cursor: url('../images/cursor.svg'), auto;
+}
+
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 66px;
+}
+
+.main-title-name {
+  color: var();
+  font-size: 72px;
+  background: -webkit-linear-gradient(#f57463, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-description {
+  text-align: center;
+  color: var(--neutral-300);
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
+.main-description-email {
+  color: var(--orange);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+input {
+  border: 2px solid var(--neutral-500);
+  padding: 16px;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--neutral-300);
+  font-size: 18px;
+  outline: none;
+}
+
+.file-description {
+  margin-top: 12px;
+  color: var(--neutral-300);
+}
+
+button[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--neutral-900);
+  background-color: var(--orange);
+  border: none;
+  width: 30%;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.main-informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--orange);
+  border-radius: 16px;
+  padding: 16px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar-uploaded {
+  width: 400px;
+  border-radius: 100%;
+}
+
+.name {
+  color: #fff;
+  font-size: 44px;
+}
+
+.github-wrapper {
+  display: flex;
+}
+
+.date {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 36px;
+    font-weight: 800;
+}
