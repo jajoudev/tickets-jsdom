@@ -14,10 +14,10 @@ $form.addEventListener("submit", (event) => {
   $mainWrapperInformations.classList.add("main-informations");
 
   $inputs.forEach((input) => {
-    checkInputs(input);
+    checkAndDisplayInputs(input);
   });
 
-  function checkInputs(input) {
+  function checkAndDisplayInputs(input) {
     if (input.name === "full-name") {
       if (!input.value) {
         const $mainTitleName = document.createElement("h1");
